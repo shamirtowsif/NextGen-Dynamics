@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: Gill Sans, Verdana;
+    margin: 0;
+    padding: 0;
+    color: #600;
+    line-height: 1.6;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Sticky Header */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Adjust the height to fit your navbar */
+    max-height: 100%; /* Ensure the logo doesn't exceed the nav height */
+    width: auto; /* Maintain the aspect ratio */
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover for a subtle effect */
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    font-weight: bold;
+}
+
+/* main Section */
+.main {
+    display: flex;
+    height: 100vh;
+    margin-top: 50px; /* To offset the sticky header */
+}
+
+.main-image {
+    flex: 1;
+    background-image: url('bgImg.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.main-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 40px;
+    background-color: black;
+    color: white;
+}
+
+.main-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.main-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta {
+    background-color: white;
+    color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    align-self: start;
+}
+
+.cta:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.service {
+    margin-bottom: 30px;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* About Us Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links a {
+    color: #ccc;
+}
+
+.footer-links a:hover {
+    color: white;
+}

@@ -25,20 +25,20 @@ a:hover {
 }
 
 .logo {
-    height: 50px; /* Adjust the height to fit your navbar */
-    max-height: 100%; /* Ensure the logo doesn't exceed the nav height */
-    width: auto; /* Maintain the aspect ratio */
+    height: 100px; 
+    max-height: 100%; 
+    width: auto; 
     transition: transform 0.3s ease-in-out;
 }
 
 .logo:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover for a subtle effect */
+    transform: scale(1.05); 
 }
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: white;
+    background-color: black;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
@@ -68,12 +68,12 @@ header nav {
 .main {
     display: flex;
     height: 100vh;
-    margin-top: 50px; /* To offset the sticky header */
+    margin-top: 50px; 
 }
 
 .main-image {
     flex: 1;
-    background-image: url('bgImg.jpg'); /* Replace with your image URL */
+    background-image: url('./Images/bgImg.jpg'); 
     background-size: cover;
     background-position: center;
 }
